@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Grid, Image, Header, Dropdown } from 'semantic-ui-react'
 import { withRouter } from "react-router-dom";
+
+// components
 import VariantTable from '../components/VariantTable/VariantTable';
 import SearchIcon from '../components/SearchIcon/SearchIcon';
 import InvitaeLogo from '../static/invitae_logo.png';
-
-// components
 import API from '../util/API';
 
 
@@ -38,7 +38,8 @@ class Home extends Component {
   }
 
   handleClick = (e) => {
-    this.searchByGene(e.nativeEvent.srcElement.value);
+    this.setState({searchTerm: e.nativeEvent.srcElement.value});
+    this.searchByGene();
   }
 
   handleKeyUp = (e) => {

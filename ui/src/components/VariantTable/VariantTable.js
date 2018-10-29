@@ -3,7 +3,8 @@ import { Table, Loader } from 'semantic-ui-react';
 import { withRouter } from 'react-router-dom';
 
 // components
-import { geneCol, dnaChangeCol, proteinCol, aliasCol, regionCol, reportedClassCol, lastEvalCol, lastUpdateCol, urlCol, sourceCol } from '../../util/Settings';
+import { geneCol, dnaChangeCol, proteinCol, aliasCol, regionCol, reportedClassCol, lastEvalCol,
+         lastUpdateCol, urlCol, sourceCol } from '../../util/Settings';
 import VariantTableHeaderCell from './VariantTableHeaderCell';
 import { DefaultVariantTableBodyCell, VariantTableLinkCell } from './VariantTableBodyCell';
 import API from '../../util/API';
