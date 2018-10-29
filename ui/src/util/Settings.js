@@ -1,0 +1,10 @@
+export const geneCol = 'Gene';
+export const dnaChangeCol = 'Nucleotide Change';
+export const proteinCol = 'Protein Change';
+export const aliasCol = 'Alias';
+export const regionCol = 'Region';
+export const reportedClassCol = 'Reported Classification';
+export const lastEvalCol = 'Last Evaluated';
+export const lastUpdateCol = 'Last Updated';
+export const urlCol = 'URL';
+export const sourceCol = 'Source';

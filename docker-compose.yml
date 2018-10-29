@@ -1,0 +1,26 @@
+version: '3'
+services:
+
+  api:
+    container_name: variant_search_api
+    restart: always
+    image: variant-search-api:latest
+    command: python app.py
+    ports:
+      - "5000:5000"
+    networks:
+      - custom_network
+
+  ui:
+    container_name: variant_search_ui
+    restart: always
+    image: variant-search-ui:latest
+    command: yarn run start
+    ports:
+      - "3000:3000"
+    networks:
+      - custom_network
+
+networks:
+  custom_network:
+    driver: bridge
