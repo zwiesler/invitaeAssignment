@@ -24,6 +24,7 @@ a continuing development process:
 * Table columns do not sort
 * UI unit tests
 * UI docker container uses development build
+* To change the path of the API, update the `baseURL` in `ui/src/util/API.js` 
 
 ##### Additional Considerations:
 * Using ElasticSearch for search and autocomplete functionality
